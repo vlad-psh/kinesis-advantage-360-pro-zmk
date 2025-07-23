@@ -23,10 +23,10 @@
 
         default_layer_0 { // Default COLEMAK layer
             bindings = <
- &kp GRAVE       &kp N1      &kp N2    &kp N3     &kp N4     &kp N5    &sl 3                                                                   &sl 3           &kp N6   &kp N7     &kp N8     &kp N9     &kp N0    &kp MINUS
+ &ctrl_c_d       &kp GRAVE   &kp N2    &kp N3     &kp N4     &kp N5    &sl 3                                                                   &sl 3           &kp N6   &kp N7     &kp N8     &kp N9     &kp N0    &none
  &kp N1          &kp Q       &kp W     &kp F      &kp P      &kp B     &none                                                                   &kp C_VOL_UP    &kp J    &kp M      &kp U      &kp Y      &kp SEMI  &kp EQUAL
- &mo 2           &kp A       &kp R     &kp S      &kp T      &kp G     &none          &none      &kp LALT                &kp RS(TAB) &kp TAB   &kp C_VOL_DN    &kp H    &kp N      &kp E      &kp I      &kp O     &kp SQT
- &kp LSHFT       &kp Z       &kp X     &kp C      &kp D      &kp V                               &kp LCTRL               &kp RCTRL                             &kp K    &kp L      &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
+ &kp TAB         &kp A       &kp R     &kp S      &kp T      &kp G     &none          &none      &kp LALT                &kp RS(TAB) &kp TAB   &kp C_VOL_DN    &kp H    &kp N      &kp E      &kp I      &kp O     &kp SQT
+ &mo 2           &kp Z       &kp X     &kp C      &kp D      &kp V                               &kp LCTRL               &kp RCTRL                             &kp K    &kp L      &kp COMMA  &kp DOT    &kp FSLH  &kp MINUS
  &kp LG(LC(LA(E))) &none     &kp ESC   &arr_left  &arr_right           &mt LGUI ENTER &kp SPACE  &mo 2                   &kp RGUI    &kp RCTRL &mt RSHFT ENTER          &kp BSPC   &kp DEL    &kp UNDER  &none     &kp LG(LC(LA(R)))
             >;
         };
@@ -43,11 +43,11 @@
 
         layer_2 { // Movements+etc layer (to enable, press LEFT SHIFT button or Right-Thumb-2 key)
             bindings = <
- &to 0    &none      &none        &none      &none       &none       &none                                                   &none   &none      &none     &none         &none       &none        &none
- &none    &none      &kp LC(S)    &none      &none       &kp LC(Q)   &kp LG(LS(N3))                                          &none   &none      &kp LBRC  &kp RBRC      &none       &none        &trans
- &trans   &none      &arr_left    &none      &arr_right  &none       &kp LG(LS(N4)) &trans  &trans           &trans  &trans  &none   &arr_left  &arr_down &arr_up       &arr_right  &none        &kp GRAVE
- &trans   &none      &none        &none      &none       &none                              &trans           &trans                  &kp LBKT   &kp RBKT  &kp LS(COMMA) &kp LS(DOT) &kp LS(FSLH) &kp PIPE
- &trans   &none      &trans       &none      &none                   &trans         &trans  &trans           &kp LC(Q) &kp F10 &kp LC(S)        &trans    &trans        &none       &trans       &kp LSHFT
+ &to 0    &none      &none        &none      &none       &none       &none                                                   &none   &none      &none     &none      &none      &none      &none
+ &none    &none      &kp LBRC     &BRCPAIR   &kp RBRC    &none       &kp LG(LS(N3))                                          &none   &none      &none     &none      &none      &none      &trans
+ &trans   &none      &kp LPAR     &PARENPAIR &kp RPAR    &none       &kp LG(LS(N4)) &trans  &trans           &trans  &trans  &none   &arr_left  &arr_down &arr_up    &arr_right &none      &kp GRAVE
+ &trans   &none      &kp LBKT     &BKTPAIR   &kp RBKT    &none                              &trans           &trans                  &none      &none     &trans     &trans     &trans     &kp PIPE
+ &trans   &none      &trans       &none      &none                   &trans         &trans  &trans           &kp LC(Q) &kp F10 &kp LC(S)        &trans    &trans     &none      &trans     &kp LSHFT
             >;
         };
 
