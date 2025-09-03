@@ -23,11 +23,11 @@
 
         default_layer_0 { // Default COLEMAK layer
             bindings = <
- &ctrl_c_d       &kp GRAVE   &kp N2    &kp N3     &kp N4     &kp N5    &sl 3                                                                   &sl 3           &kp N6   &kp N7     &kp N8     &kp N9     &kp N0    &none
+ &kp BSPC        &kp GRAVE   &kp N2    &kp N3     &kp N4     &kp N5    &sl 3                                                                   &sl 3           &kp N6   &kp N7     &kp N8     &kp N9     &kp N0    &none
  &kp N1          &kp Q       &kp W     &kp F      &kp P      &kp B     &none                                                                   &kp C_VOL_UP    &kp J    &kp M      &kp U      &kp Y      &kp SEMI  &kp EQUAL
  &kp TAB         &kp A       &kp R     &kp S      &kp T      &kp G     &none          &none      &kp LALT                &kp RS(TAB) &kp TAB   &kp C_VOL_DN    &kp H    &kp N      &kp E      &kp I      &kp O     &kp SQT
  &mo 2           &kp Z       &kp X     &kp C      &kp D      &kp V                               &kp LCTRL               &kp RCTRL                             &kp K    &kp L      &kp COMMA  &kp DOT    &kp FSLH  &kp MINUS
- &kp LG(LC(LA(E))) &none     &kp ESC   &arr_left  &arr_right           &mt LGUI ENTER &kp SPACE  &mo 2                   &kp RGUI    &kp RCTRL &mt RSHFT ENTER          &kp BSPC   &kp DEL    &kp UNDER  &none     &kp LG(LC(LA(R)))
+ &kp LG(LC(LA(E))) &none     &kp ESC   &arr_left  &arr_right           &mt LGUI ENTER &kp SPACE  &mo 2                   &kp RGUI    &kp RCTRL &mt RSHFT ENTER          &kp BSPC   &kp DEL    &kp UNDER  &kp BSLH  &kp LG(LC(LA(R)))
             >;
         };
 
